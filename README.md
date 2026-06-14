@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🕊️ NayePankh Foundation — Official Website Redesign
 
 > **"Giving Wings to Dreams"**  
@@ -136,3 +137,6 @@ Alternatively, run with Python:
 python -m http.server 8000
 # Open http://localhost:8000 in your browser
 ```
+=======
+# nayepankh-foundation-website
+>>>>>>> 5e6c7b97acd149ae17f7b178c6aa48067ae49a67
