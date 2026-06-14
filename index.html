@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NayePankh Foundation | Giving Wings to Dreams - Official Website</title>
+    <meta name="description" content="NayePankh Foundation is a youth-led non-profit organization dedicated to empowering underprivileged communities through education, food drives, hygiene campaigns, and clothing donations. Join us to make a difference.">
+    
+    <!-- Open Graph Tags (SEO) -->
+    <meta property="og:title" content="NayePankh Foundation | Giving Wings to Dreams">
+    <meta property="og:description" content="Empowering underprivileged communities through volunteer-driven youth education, food distribution, and social welfare.">
+    <meta property="og:image" content="images/hero_illustration.png">
+    <meta property="og:url" content="https://www.nayepankh.com">
+    <meta property="og:type" content="website">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome Icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library (CSS CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Page Loader Screen -->
+    <div id="preloader">
+        <div class="loader-spinner"></div>
+        <div class="loader-logo gradient-text">NayePankh</div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" id="header-logo" aria-label="NayePankh Foundation Home">
+                <i class="fa-solid fa-dove"></i>
+                <div>
+                    <div>NayePankh</div>
+                    <div class="logo-sub">Foundation</div>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="navigation-menu" aria-label="Main navigation menu">
+                <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+                
+                <div class="nav-item dropdown">
+                    <button class="dropdown-toggle-btn" aria-expanded="false" aria-controls="about-dropdown-menu" id="nav-about">
+                        About Us <i class="fa-solid fa-chevron-down dropdown-arrow"></i>
+                    </button>
+                    <div class="dropdown-menu" id="about-dropdown-menu" aria-labelledby="nav-about">
+                        <a href="about.html" class="dropdown-item">Who We Are</a>
+                        <a href="success-stories.html" class="dropdown-item">Success Stories</a>
+                        <a href="media-coverage.html" class="dropdown-item">Media Coverage</a>
+                        <a href="careers.html" class="dropdown-item">Careers / Internships</a>
+                    </div>
+                </div>
+
+                <a href="programs.html" class="nav-link" id="nav-programs">Programs</a>
+                <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+                <a href="events.html" class="nav-link" id="nav-events">Events</a>
+                <a href="volunteer.html" class="nav-link" id="nav-volunteer">Volunteer</a>
+                <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+                
+                <div class="nav-actions">
+                    <div class="nav-socials">
+                        <a href="https://www.instagram.com/nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/nayepankh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <button class="search-btn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="theme-toggle-btn" aria-label="Switch Theme"><i class="fa-solid fa-moon"></i><i class="fa-solid fa-sun"></i></button>
+                    <a href="donate.html" class="btn btn-primary btn-sm ripple-btn">Donate Now</a>
+                </div>
+            </nav>
+
+            <button class="hamburger-toggle" aria-controls="navigation-menu" aria-expanded="false" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="blob-container">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </div>
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <div class="hero-tag">
+                    <span></span> Registered NGO Initiative
+                </div>
+                <h1 class="hero-title">Empowering Communities,<br><span class="gradient-text">Transforming Lives</span></h1>
+                <p class="hero-subtitle">Join NayePankh Foundation in creating meaningful social impact through youth-led education, food distribution, and community support.</p>
+                <div class="hero-btns">
+                    <a href="volunteer.html" class="btn btn-primary ripple-btn"><i class="fa-solid fa-handshake-angle"></i> Become a Volunteer</a>
+                    <a href="donate.html" class="btn btn-secondary ripple-btn"><i class="fa-solid fa-heart"></i> Donate Now</a>
+                </div>
+            </div>
+            
+            <div class="hero-illustration" data-aos="fade-left">
+                <div class="hero-illustration-bg"></div>
+                <div class="illustration-card glass-card">
+                    <img src="images/hero_illustration.png" alt="NayePankh Youth Volunteering Illustration" width="500" height="400">
+                </div>
+                <!-- Floating Glassmorphic Widgets -->
+                <div class="floating-widget widget-1 glass-card">
+                    <div class="widget-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="widget-info">
+                        <h4>Education Drive</h4>
+                        <p>Empowering Kids</p>
+                    </div>
+                </div>
+                <div class="floating-widget widget-2 glass-card">
+                    <div class="widget-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <div class="widget-info">
+                        <h4>100k+ Meals</h4>
+                        <p>Food Distribution</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#stats" class="scroll-indicator" aria-label="Scroll down to statistics"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
+
+    <!-- Animated Statistics Section -->
+    <section class="stats-section section" id="stats">
+        <div class="container stats-grid">
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="0">
+                <div class="stat-number" data-target="200000" data-suffix="+">0</div>
+                <div class="stat-label">Lives Impacted</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <div class="stat-number" data-target="10000" data-suffix="+">0</div>
+                <div class="stat-label">Trusted Volunteers</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                <div class="stat-label">Cities Reached</div>
+            </div>
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <div class="stat-number" data-target="50000" data-suffix="+">0</div>
+                <div class="stat-label">Donations Received</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Impact Areas -->
+    <section class="section" id="impact">
+        <div class="blob-container">
+            <div class="blob blob-3"></div>
+        </div>
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">What We Do</span>
+                <h2 class="section-title">Our Key Focus Areas</h2>
+                <p class="section-subtitle">We work tirelessly to support underprivileged communities through structured and sustainable programs.</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="0">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-book-open"></i></div>
+                    <h3>Education Support</h3>
+                    <p>Providing basic schooling utilities, free tuition programs, and sponsoring fees for underprivileged children to pave a brighter future.</p>
+                </div>
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="100">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-bowl-food"></i></div>
+                    <h3>Food Distribution</h3>
+                    <p>Fighting hunger through regular food drives in slums, orphanages, and streets to make nutritious meals accessible to everyone.</p>
+                </div>
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="200">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+                    <h3>Hygiene Awareness</h3>
+                    <p>Conducting sanitary pad distribution and hygiene workshops for girls and women, breaking taboos surrounding menstrual health.</p>
+                </div>
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="300">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-venus"></i></div>
+                    <h3>Women Empowerment</h3>
+                    <p>Conducting self-reliance and self-defense bootcamps, skill training programs, and awareness sessions to uplift underprivileged women.</p>
+                </div>
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="400">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-shirt"></i></div>
+                    <h3>Clothing Donation</h3>
+                    <p>Distributing warmth and dignity by organizing drives to donate fresh clothes and warm blankets during winters to families in need.</p>
+                </div>
+                <div class="impact-card glass-card hover-lift glow-border" data-aos="fade-up" data-aos-delay="500">
+                    <div class="impact-icon-wrapper"><i class="fa-solid fa-paw"></i></div>
+                    <h3>Animal Welfare</h3>
+                    <p>Providing stray animal shelter assistance, food drives, and emergency medical aid to ensure every stray is treated with compassion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section why-section" id="why-choose-us">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Our Values</span>
+                <h2 class="section-title">Why NayePankh Stand Out</h2>
+                <p class="section-subtitle">We believe in delivering measurable, transparent, and direct community-centric support.</p>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="0">
+                    <i class="fa-solid fa-shield-halved why-icon"></i>
+                    <div class="why-text">
+                        <h3>Registered NGO</h3>
+                        <p>Fully compliant non-profit organisation recognized by government authorities with legal certifications.</p>
+                    </div>
+                </div>
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-eye why-icon"></i>
+                    <div class="why-text">
+                        <h3>Transparent Donations</h3>
+                        <p>Every single rupee donated is logged and accounted for, with receipts and periodic utilization reports sent directly to you.</p>
+                    </div>
+                </div>
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-users-gear why-icon"></i>
+                    <div class="why-text">
+                        <h3>Youth-Led Initiative</h3>
+                        <p>Fueled by energetic youth who bring innovation, modern skills, and unwavering passion to the humanitarian space.</p>
+                    </div>
+                </div>
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-handshake why-icon"></i>
+                    <div class="why-text">
+                        <h3>Community Driven</h3>
+                        <p>Programs designed through active feedback from community leaders and target groups to resolve root issues.</p>
+                    </div>
+                </div>
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa-solid fa-award why-icon"></i>
+                    <div class="why-text">
+                        <h3>Trusted Volunteers</h3>
+                        <p>10,000+ vetted and passionate volunteers who undergo screening and program training for high-integrity service.</p>
+                    </div>
+                </div>
+                <div class="why-card glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fa-solid fa-chart-line why-icon"></i>
+                    <div class="why-text">
+                        <h3>Sustainable Impact</h3>
+                        <p>Moving beyond temporary relief to establish structured programs like continuous student sponsorships and job skill classes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="section" id="stories">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Impact Stories</span>
+                <h2 class="section-title">Stories of Real Change</h2>
+                <p class="section-subtitle">Meet the individuals whose lives were transformed through our programs and your generous contributions.</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card glass-card hover-lift" data-aos="fade-up" data-aos-delay="0">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Boy holding notebook smiling">
+                        <span class="story-category">Education</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>Rahul's Flight to School</h3>
+                        <p>The son of a daily wage laborer, Rahul had to drop out in class 5. NayePankh sponsored his tuition and books. Today, he ranks first in class 8.</p>
+                        <div class="story-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Kanpur, UP</span>
+                            <span>June 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card glass-card hover-lift" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Underprivileged women attending hygiene seminar">
+                        <span class="story-category">Women Hygiene</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>Breaking Slum Taboos</h3>
+                        <p>Through our regular distribution drives and doctor seminars, over 1,200 women in Noida slums have transitioned to clean sanitary products.</p>
+                        <div class="story-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Noida, Delhi NCR</span>
+                            <span>Feb 2026</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card glass-card hover-lift" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-img">
+                        <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=600&q=80" alt="Happy children eating lunch together">
+                        <span class="story-category">Food Security</span>
+                    </div>
+                    <div class="story-content">
+                        <h3>No Child Sleeps Hungry</h3>
+                        <p>Under our 'NayePankh Rasoi', we serve fresh hot lunch to over 250 orphans and street kids every weekend, combating child malnutrition.</p>
+                        <div class="story-meta">
+                            <span><i class="fa-solid fa-location-dot"></i> Lucknow, UP</span>
+                            <span>April 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Volunteer Speak</span>
+                <h2 class="section-title">What Our Volunteers Say</h2>
+                <p class="section-subtitle">Real experiences shared by our youth workers who represent the core strength of our foundation.</p>
+            </div>
+            
+            <div class="slider-container">
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box glass-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"Volunteering with NayePankh Foundation completely shifted my worldview. Being part of the food drive campaigns taught me gratitude, and seeing kids write their names for the first time is a feeling that cannot be put into words."</p>
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Aishwarya Sharma" class="testimonial-avatar">
+                            <h4 class="testimonial-name">Aishwarya Sharma</h4>
+                            <p class="testimonial-role">Volunteer since 2023 | Delhi NCR</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box glass-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"As a student coordinator, the leadership skills I developed here are immense. The team is transparent, highly energetic, and we actually see our effort converting into real-time benefits for the children. Proud to be a NayePankh member!"</p>
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Rohan Verma" class="testimonial-avatar">
+                            <h4 class="testimonial-name">Rohan Verma</h4>
+                            <p class="testimonial-role">City Lead | Kanpur</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-box glass-card">
+                            <i class="fa-solid fa-quote-left quote-icon"></i>
+                            <p class="testimonial-text">"NayePankh gave me the platform to use my graphic design skills to create digital flyers and run fundraising campaigns online. It is incredible how a group of youth can manage such extensive distribution networks."</p>
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80" alt="Sneha Patel" class="testimonial-avatar">
+                            <h4 class="testimonial-name">Sneha Patel</h4>
+                            <p class="testimonial-role">Digital Media Designer | Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation Arrows -->
+                <button class="slider-arrow prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-arrow next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+                
+                <!-- Indicators -->
+                <div class="slider-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Preview Section -->
+    <section class="section" id="gallery-preview">
+        <div class="container">
+            <div class="text-center">
+                <span class="section-tag">Captured Moments</span>
+                <h2 class="section-title">Our Actions in Frames</h2>
+                <p class="section-subtitle">A glimpse of our latest volunteer programs, food drives, and school supply distribution activities.</p>
+            </div>
+            
+            <div class="gallery-grid" style="margin-bottom: 3.5rem;">
+                <div class="gallery-item" data-category="education" data-aos="zoom-in" data-aos-delay="0">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=500&q=80" alt="Students writing on books">
+                    <div class="gallery-overlay">
+                        <h3>Primary School Teaching</h3>
+                        <p>Education Support</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=500&q=80" alt="Distributing warm lunches">
+                    <div class="gallery-overlay">
+                        <h3>Weekly Food Distribution</h3>
+                        <p>Food Drive</p>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=500&q=80" alt="Volunteers standing smiling">
+                    <div class="gallery-overlay">
+                        <h3>Youth Development Meet</h3>
+                        <p>Events</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="gallery.html" class="btn btn-outline ripple-btn"><i class="fa-solid fa-images"></i> View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="blob-container">
+            <div class="blob blob-1" style="opacity: 0.1;"></div>
+            <div class="blob blob-2" style="opacity: 0.1;"></div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Become a Part of the Change</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Whether you wish to pledge your skills as a volunteer or sponsor a child's study via a donation, your help matters.</p>
+            <div class="hero-btns" style="justify-content: center;" data-aos="fade-up" data-aos-delay="200">
+                <a href="volunteer.html" class="btn btn-accent ripple-btn"><i class="fa-solid fa-handshake-angle"></i> Volunteer With Us</a>
+                <a href="donate.html" class="btn btn-secondary ripple-btn"><i class="fa-solid fa-heart"></i> Donate Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo" aria-label="NayePankh Foundation Home">
+                        <i class="fa-solid fa-dove"></i>
+                        <div>
+                            <div>NayePankh</div>
+                            <div class="logo-sub">Foundation</div>
+                        </div>
+                    </a>
+                    <p>NayePankh Foundation is a youth-led non-profit organisation working to uplift underprivileged communities through education, meals, hygiene, and shelter drives.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/nayepankh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://facebook.com/nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://youtube.com/@nayepankhfoundation" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="success-stories.html">Success Stories</a></li>
+                        <li><a href="media-coverage.html">Media Coverage</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="careers.html">Careers / Internships</a></li>
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="footer-heading">Contact Details</h3>
+                    <ul class="footer-contact-info">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <a href="mailto:contact@nayepankh.com">contact@nayepankh.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-globe"></i>
+                            <div>
+                                <a href="https://www.nayepankh.com" target="_blank" rel="noopener noreferrer">www.nayepankh.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                Noida, Uttar Pradesh, India
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="footer-heading">Our Newsletter</h3>
+                    <p>Subscribe to receive quarterly impact digests and volunteer invitations.</p>
+                    <form class="newsletter-form" aria-label="Footer Newsletter Signup">
+                        <input type="email" placeholder="Your Email Address" required aria-label="Email Address">
+                        <button type="submit" aria-label="Submit newsletter"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NayePankh Foundation. All Rights Reserved. Tagline "Giving Wings to Dreams". Registered NGO in India.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- Floating Quick CTAs -->
+    <div class="floating-ctas-container">
+        <a href="volunteer.html" class="floating-cta volunteer" aria-label="Become a Volunteer"><i class="fa-solid fa-handshake-angle"></i> Volunteer</a>
+        <a href="donate.html" class="floating-cta donate" aria-label="Donate Now"><i class="fa-solid fa-heart"></i> Donate</a>
+    </div>
+
+    <!-- Floating Share Button & Widgets -->
+    <button class="share-btn-main" aria-label="Share this website"><i class="fa-solid fa-share-nodes"></i></button>
+    
+    <div class="social-share-widget">
+        <a href="#" class="share-btn facebook" data-platform="facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="share-btn linkedin" data-platform="linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" class="share-btn twitter" data-platform="twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" class="share-btn whatsapp" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="share-btn copy-link" data-platform="copy" aria-label="Copy page link"><i class="fa-solid fa-link"></i></a>
+    </div>
+
+    <div class="share-modal-overlay">
+        <div class="share-modal glass-card">
+            <span class="search-close" style="position: relative; float: right; top: -5px; right: -5px;">&times;</span>
+            <h3>Share this website</h3>
+            <div class="share-modal-options">
+                <a href="#" class="share-btn facebook" data-platform="facebook" aria-label="Share on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="share-btn linkedin" data-platform="linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="share-btn twitter" data-platform="twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="share-btn whatsapp" data-platform="whatsapp" aria-label="Share on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="share-btn copy-link" data-platform="copy" aria-label="Copy page link"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+        <div class="search-container">
+            <span class="search-close" aria-label="Close search overlay">&times;</span>
+            <div class="search-header">
+                <h2>Search NayePankh website</h2>
+                <p>Type keywords to find programs, volunteer opportunities, news, or careers.</p>
+            </div>
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Start typing to search..." aria-label="Search input">
+            </div>
+            <div class="search-results"></div>
+        </div>
+    </div>
+
+    <!-- Lightbox for Gallery Preview -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+        <div class="lightbox-content-wrapper">
+            <span class="lightbox-close" aria-label="Close lightbox">&times;</span>
+            <img class="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-arrow prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-arrow next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- JS Scripts (CDNs and Local) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

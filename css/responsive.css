@@ -1,0 +1,340 @@
+/* ==========================================================================
+   NayePankh Foundation - Responsive Styles
+   ========================================================================== */
+
+/* --- Media Query: Large Screen Scale (Laptops / Small Desktops) --- */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+    
+    .hero-title {
+        font-size: 3.25rem;
+    }
+    
+    .stats-grid {
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 3rem;
+    }
+}
+
+/* --- Media Query: Tablet Landscape / Small Laptops (992px to 1023px) --- */
+@media (max-width: 1023px) {
+    .section {
+        padding: 5rem 0;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-btns {
+        justify-content: center;
+    }
+    
+    .floating-widget {
+        display: none; /* Hide floating widgets on smaller screens to prevent overlap */
+    }
+    
+    .impact-grid, .why-grid, .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 3.5rem !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-dot {
+        left: 11px !important;
+        right: auto !important;
+    }
+    
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+    
+    .program-card {
+        grid-template-columns: 1fr !important;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    
+    .program-image-wrap {
+        height: 300px;
+        order: 1 !important;
+    }
+    
+    .program-details {
+        order: 2 !important;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .volunteer-opps-grid, .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .form-grid, .donation-grid, .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .socials-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* --- Media Query: Mobile & Navigation Toggle (under 991px) --- */
+@media (max-width: 991px) {
+    /* Main Navigation Responsive Drawer */
+    .hamburger-toggle {
+        display: flex;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 320px;
+        height: 100vh;
+        background: var(--bg-secondary);
+        border-left: 1px solid var(--card-border);
+        box-shadow: var(--shadow-lg);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 6rem 2.5rem 3rem 2.5rem;
+        gap: 1.5rem;
+        z-index: 1000;
+        transition: right var(--transition-normal) cubic-bezier(0.16, 1, 0.3, 1);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        background: var(--nav-bg);
+    }
+    
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    .nav-link {
+        font-size: 1.15rem;
+        width: 100%;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--card-border);
+    }
+    
+    .nav-link::after {
+        display: none; /* Hide custom underline and use active border/color instead */
+    }
+    
+    .nav-link.active {
+        border-bottom-color: var(--primary-color);
+        color: var(--primary-color);
+    }
+    
+    .nav-actions {
+        margin-top: 1.5rem;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 1.5rem;
+    }
+    
+    .nav-socials {
+        justify-content: center;
+    }
+    
+    .theme-toggle-btn {
+        align-self: center;
+    }
+    
+    .nav-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Lightbox adjust */
+    .lightbox-arrow.prev { left: -45px; }
+    .lightbox-arrow.next { right: -45px; }
+}
+
+/* --- Media Query: Small Mobile / Handset Portrait (< 768px) --- */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .impact-grid, .why-grid, .stories-grid, .team-grid, .certs-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-box {
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .quote-icon {
+        left: 1.5rem;
+        font-size: 2.25rem;
+    }
+    
+    .testimonial-text {
+        font-size: 1.1rem;
+    }
+    
+    .slider-arrow {
+        display: none; /* Hide arrows on mobile and rely on swipe and dots */
+    }
+    
+    .about-story-section {
+        padding: 4rem 0;
+    }
+    
+    .story-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+    
+    .story-image-wrap {
+        max-width: 90%;
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .mv-card {
+        padding: 2rem;
+    }
+    
+    .volunteer-opps-grid, .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-info-card, .form-container, .donation-form-wrap {
+        padding: 2rem 1.5rem;
+    }
+    
+    .form-group-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    
+    .donate-tier-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-methods-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-header {
+        padding: 1.25rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .faq-content-inner {
+        padding: 0 1.5rem 1.25rem 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info-card {
+        padding: 1.5rem;
+    }
+    
+    .socials-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-bottom-links {
+        justify-content: center;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+}
+
+/* --- Media Query: Extra Small Screen (< 480px) --- */
+@media (max-width: 480px) {
+    .socials-cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-title {
+        font-size: 2.15rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-menu {
+        width: 100%; /* Full screen menu drawer on very small mobile devices */
+    }
+}
