@@ -3751,6 +3751,8 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-y: auto;         
+    padding: 2rem 1rem;
 }
 
 .career-apply-modal.active {
@@ -3767,8 +3769,15 @@ button {
     padding: 2.5rem;
     position: relative;
     box-shadow: var(--shadow-lg);
+    max-height: calc(100vh - 4rem); 
+    display: flex;
+    flex-direction: column;
 }
-
+.career-modal-content form {
+    overflow-y: auto;
+    padding: 2rem; 
+    width: 100%;
+}
 .career-modal-close {
     position: absolute;
     top: 1.25rem;
